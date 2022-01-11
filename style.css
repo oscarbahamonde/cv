@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  color: #fff ;
+}
+
+body{
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.section-headline {
+  @apply pl-2 font-bold tracking-widest uppercase border-l-8 border-green-500 sm:text-xl;
+}
+
+progress {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 10px;
+  margin-bottom: 0.4rem;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 10px;
+  background-color: #d1d5db;
+  box-shadow: 0 2px 6px #555;
+}
+
+progress::-webkit-progress-value {
+  border-radius: 10px 0 0 10px;
+  background-image: linear-gradient(36deg, #0fc, #cf0);
+}
+
+.section-headline {
+  color: #10b981 !important;
+}
+
+#oscar-headline::before {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  bottom: -8px;
+  content: "";
+  background-image: url("./assets/oscar-icon.png");
+  background-position: center;
+  background-size: contain;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+.inline{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+}
+
+.bg-marker{
+  background-color: #cf0;
+  border-radius: 25px;
+}
+
+.text-marker{
+  color: #cf0 !important;
+}

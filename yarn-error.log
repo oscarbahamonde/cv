@@ -1,0 +1,54 @@
+Arguments: 
+  /home/n/.nvm/versions/node/v14.18.1/bin/node /home/n/.nvm/versions/node/v14.18.1/bin/yarn dev
+
+PATH: 
+  /home/n/.amplify/bin:/home/n/.local/share/solana/install/active_release/bin:/home/n/.amplify/bin:/home/n/.local/bin:/home/n/.amplify/bin:/home/n/.cargo/bin:/home/n/.local/share/solana/install/active_release/bin:/home/n/.amplify/bin:/home/n/.nvm/versions/node/v14.18.1/bin:/home/n/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.18.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/n/cv/package.json: Unexpected token # in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at /home/n/.nvm/versions/node/v14.18.1/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/n/.nvm/versions/node/v14.18.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/n/.nvm/versions/node/v14.18.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  #{
+    "name": "cv-template",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite --open",
+      "build": "vite build",
+      "serve": "vite preview",
+      "deploy": "npx push-dir --dir=dist --branch=gh-pages"
+    },
+    "devDependencies": {
+      "@tailwindcss/typography": "^0.4.0",
+      "autoprefixer": "^10.2.5",
+      "cssnano": "^5.0.2",
+      "postcss": "^8.2.13",
+      "push-dir": "^0.4.1",
+      "tailwindcss": "^2.1.2",
+      "vite": "^2.2.3"
+    },
+    "dependencies": {
+      "jquery": "^3.6.0",
+      "jquery-ui": "^1.13.0",
+      "mdi": "^2.2.43"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
